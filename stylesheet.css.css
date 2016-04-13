@@ -133,7 +133,7 @@ section{
 section#page-header{
 	height: 100vh; /*vh is "viewpoint height*/
 	width:100%;
-	background: #ccc url(https://photos.google.com/photo/AF1QipNQ6EJZgdbVxetMpCBGkyLKy4Svij73z6xFuG1R) no-repeat center center;
+	background: #ccc url(https://photos.google.com/photo/AF1QipM7QSECzFScjRJXCRP8YzaNtrPuB0Mr3UxlpxEb) no-repeat center center;
 	background-size: cover;
 	color: #000;
 	display: table; /*IMPORTANT: sets parent container to behave like a table*/
@@ -168,7 +168,7 @@ section.page-content div{
 
 section.page-content article {
 	margin: 1em;
-	background: url(images/break.png) no-repeat top center;
+	background: url(https://photos.google.com/photo/AF1QipPT9SeIL6KlQv-WZoUYloulhWPhOsH6f3pRM6C_) no-repeat top center;
 	padding-top: 30px;
 	background-size: 60%;
 }
@@ -190,6 +190,13 @@ section.page-content article dd {
 /*special PROFILE rules */
 section#profile div {
 	margint-top: 0;
+}
+.profile_shot {
+  clear: both;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
 }
 /*special SKILLS rules */
 section#skills ul {
