@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {margin: none; padding: none; border: 8px; color: #000; background-color: #ffffO;}  
 
 h1 { font: 25px Arial, Helvetica, sans-serif; font-style: italic; font-weight: 775; text-align: Justified; margin: 8px; padding-top: 9px;}
@@ -19,3 +20,258 @@ ul {font: 10px Arial, Helvetica, sans-serif ; text-align: left; margin: 3px padd
 li.inline {display: inline; padding-left: 2px; padding-right: 6px; border-right: 1px dotted #066; text-align: left;}
 
 li.last {display: inline; padding-left: 2px; padding-right: 2px; border-right: 0px; text-align: left;}
+=======
+body {
+  margin: 0;
+  font-size: 100%;
+  font: 1.15em/1.3 'Oxygen', 'Helvetica', arial, sans-serif;
+  font-weight: 300;
+}
+
+ul
+{
+    list-style-type: none;
+}
+/*-------GENERAL TEXT RULES -------*/
+
+h1 {
+   font: 2.5em/1 'Oxygen', 'Helvetica', arial, sans-serif;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-align: center;
+}
+h2 {
+   font: 1.35em/2 'Oxygen', 'Helvetica', arial, sans-serif;
+   font-weight: 400;
+   text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #009ee6;
+}
+a:hover {
+  text-decoration: none;
+  color: #E57A00;
+}
+
+/*----------- NAV RULES ---------*/
+nav{
+  height: 3em;
+  line-height: 2.3em;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 600;
+  display: inline-block;
+  width:100%;
+  background: rgba(0,0,0,0.55);
+  border: 0;
+  font-family:'Oxygen', 'Helvetica', arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  /* Next line prevents links from jumping to wrong place in chrome and Safari*/
+  -webkit-transform: translateZ(0);
+}
+nav.nav_closed {
+  overflow: hidden;
+}
+
+/* MENU button rules*/
+a#menu {
+  float: right;
+  border: 1px solid #ccc;
+  color: #FFE3CD;
+  width: 4em;
+  margin-top: 5px;
+  margin-right: 15px;
+  font-weight:300;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+a#menu:hover{
+  background: rgba(255, 255, 255, 0.4);
+  color: #333;
+  font-weight: 600;
+}
+
+/*#navlist*/
+ul#navlist{
+  clear:right;
+  list-style: none;
+  font-weight:300;
+}
+nav.nav_closed ul#navlist {
+  display:none;
+}
+nav.nav_open {
+  overflow:visible;
+  background:rgba(0,0,0,0.85);
+}
+nav.nav_open ul#navlist {
+  display:block;
+  background: rgba(0,0,0,0.85);
+}
+nav.nav_open a#menu {
+  color: #333;
+  background:#999;
+}
+nav ul#navlist li a {
+  display: block;
+  width: 100%;
+  height:100%;
+  border-top: 1px #ccc solid;
+  color:#FFE3CD;
+  text-decoration:none;
+}
+nav ul#navlist li a:hover {
+  background: #009ee6;
+  color:#fff;
+  text-decoration:none;
+  }
+
+/*-------NOSCRIPT STYLES -------*/
+#mainnav{
+  padding-top: 4em;
+}
+#mainnav li {
+  width:100%;
+  text-align: center;
+  height: 2.5em;
+  line-height:2.5em;
+  border-top:1px #ccc solid;
+}
+noscript p{
+  text-align: center;
+  margin: 1em auto;
+  width: 80%;
+}
+
+/*-------SECTION RULES -------*/
+section{
+
+}
+/* ----section#page-header rules---*/
+section#page-header{
+  height: 100vh; /*vh is "viewpoint height*/
+  width:100%;
+  background: #ccc url(https://photos.google.com/photo/AF1QipM7QSECzFScjRJXCRP8YzaNtrPuB0Mr3UxlpxEb) no-repeat center center;
+  background-size: cover;
+  color: #000;
+  display: table; /*IMPORTANT: sets parent container to behave like a table*/
+}
+section#page-header header {
+  width: 100%;
+  text-align: center;
+  display: table-cell; /*IMPORTANT: sets child to display like table cell for verticle centering*/
+  verticle-align: middle; /*IMPORTANT: vertically centers text in "table cell" regardless of    parent resizing.*/
+} 
+section#page-header header h1 {
+  front-size: 4em;
+  font-weight: 400;
+  line-weight: 1em;
+}
+section#page-header header h2{
+  font-size: 1.45em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* section.page-content */
+section.page-content{
+  clear:both;
+}
+section.page-content div{
+  width:85%;
+  max-width: 1024;
+  margin: 3em auto;
+  padding-top: 4em; /*ensures h1s clear the
+    persistent navbar at top*/
+}
+
+section.page-content article {
+  margin: 1em;
+  background: url(https://photos.google.com/photo/AF1QipPT9SeIL6KlQv-WZoUYloulhWPhOsH6f3pRM6C_) no-repeat top center;
+  padding-top: 30px;
+  background-size: 60%;
+}
+section.page-content article h3 {
+  font-weight: 700;
+  font-size: 1.15em;
+}
+section.page-content article dl {
+  margin: 1.5em auto;
+  margin-left: 0.5em;
+}
+section.page-content article dt {
+  font-weight: 700;
+}
+section.page-content article dd {
+  margin-bottom :0.6em;
+}
+
+/*special PROFILE rules */
+section#profile div {
+  margint-top: 0;
+}
+.profile_shot {
+  clear: both;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+/*special SKILLS rules */
+section#skills ul {
+  width: 60%;
+  margin: 1em auto;
+  padding: 1em auto;
+  overflow: hidden;
+}
+
+section#skills ul li {
+  float: left;
+  width: 40%;
+  padding: 5%;
+}
+section#skills ul li img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+/*special CONTACT rules*/
+section#contact {
+  text-align: center;
+  background: #fcead9;
+  border-bottom: 4em #232323 solid;
+}
+section#contact ul {
+  width: 75%;
+  margin: 1em auto;
+  padding: 1em auto;
+  overflow: hidden;
+}
+section#contact ul li {
+  float: left;
+  width: 20%;
+}
+section#contact ul li a img {
+  display: block;
+  width: 60%;
+  max-width: 80px;
+  margin: auto;
+}
+
+/*-------------MEDIA Queries--------------*/
+
+@media screen and (min-width:720px){
+  section#skills ul {
+    width: 100%;
+  }
+  section#skills ul li{
+    width:16%;
+    padding: 0.33%;
+  }
+
+}
+>>>>>>> refs/remotes/origin/HerCode-patch-12042016
