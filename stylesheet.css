@@ -133,7 +133,7 @@ section.page-content div{
 section#page-header{
   height: 100vh; /*vh is "viewpoint height"*/
   width:100%;
-  background: #ffffff url(images/silentDrive.jpg) no-repeat center center;
+  background: #ffffff url(silentDrive.jpg) no-repeat center center;
   background-size:cover;
   color: #000;
   display: table; /*IMPORTANT: sets parent container to behave like
@@ -170,7 +170,7 @@ section#page-header h2{
 
 /*special PROFILE rules */
 section#profile {
-  background: #ccc url(images/stars.jpg) no-repeat center center;
+  background: #ccc url(stars.jpg) no-repeat center center;
   background-size:cover;
   color:#BCC6CC;
   min-height: 100%;
@@ -217,7 +217,7 @@ section#profile {
 /*special HIGHLIGHTS rules */
 
 section#highlights{
-  background: #ccc url(images/stars.jpg) no-repeat bottom center;
+  background: #ccc url(stars.jpg) no-repeat bottom center;
   background-size:cover;
   color:#BCC6CC;
   min-height: 100%;
@@ -260,7 +260,7 @@ section#highlights{
 /*special EDUCATION rules */
 
 section#education{
-  background: #ccc url(images/stars.jpg) no-repeat bottom center;
+  background: #ccc url(stars.jpg) no-repeat bottom center;
   background-size:cover;
   color:#BCC6CC;
   min-height: 100%;
@@ -299,7 +299,7 @@ section#education{
 /*special EXPERIENCE rules */
 
 section#experience{
-  background: #ccc url(images/stars.jpg) no-repeat center center;
+  background: #ccc url(stars.jpg) no-repeat center center;
   background-size:cover;
   color:#BCC6CC;
   min-height: 100%;
@@ -339,7 +339,7 @@ section#experience{
 
 /*special SKILLS rules */
 section#skills {
-  background: #ccc url(images/stars.jpg) no-repeat bottom center;
+  background: #ccc url(stars.jpg) no-repeat bottom center;
   background-size:cover;
   color:#BCC6CC;
   min-height: 100%;
