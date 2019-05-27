@@ -1,4 +1,20 @@
- ul
+body, html {
+  height: 100%;
+}
+
+main.parallax section { 
+  /* The image used */
+  background-image:url("silentDrive.jpg");
+  /* Set a specific height */
+  height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+ul
 {
     list-style-type: none;
 }
@@ -112,32 +128,31 @@ noscript p{
 
 /*-------SECTION RULES -------*/
 
-section{
-}
-
 /* section.page-content*/
 section.page-content{
   clear:both;
+  over-flow:hidden;
 }
 /*special PAGE-CONTENT rules*/
 section.page-content div{
   width:100%;
   max-width:1024px;
+  height:auto;
   margin:auto;
-  padding-top:2em;
-  padding-bottom: 4em; /*ensures h1s clear the
-    persistent navbar at top*/
+  padding-top:;
+  padding-bottom: .5em; /*ensures h1s clear the persistent navbar at top*/
 }
 
 /* ----section#page-header rules---*/
 section#page-header{
   height: 100vh; /*vh is "viewpoint height"*/
   width:100%;
-  background: #ffffff url(silentDrive.jpg) no-repeat center center;
-  background-size:cover;
-  color: #000;
-  display: table; /*IMPORTANT: sets parent container to behave like
+  /*background:  url() no-repeat center center;
+  background-size:cover;*/
+  color: #;
+  display: table;/*IMPORTANT: sets parent container to behave like
   a table*/
+
 }
 section#page-header header {
   width: 100%;
@@ -170,8 +185,8 @@ section#page-header h2{
 
 /*special PROFILE rules */
 section#profile {
-  background: #ccc url(stars.jpg) no-repeat center center;
-  background-size:cover;
+  /*background: #ccc url() no-repeat center center;
+  background-size:cover;*/
   color:#BCC6CC;
   min-height: 100%;
   min-width: 1024px;
@@ -180,7 +195,7 @@ section#profile {
   top:0;
   left:0;
   padding-top:2em;
-  padding-bottom:4em;
+  padding-bottom:.5em;
 }
 
 .about-me h1{
@@ -203,8 +218,9 @@ section#profile {
   font: 4em 'Roboto Slab',serif;
   font-weight: 400;
   font-size: 100%;
-  margin:auto;
+  margin:;
   font-style:bold;
+  padding-top=1em;
 }
 
 .about-me a[href^="mailto:"]:hover:after
@@ -217,8 +233,8 @@ section#profile {
 /*special HIGHLIGHTS rules */
 
 section#highlights{
-  background: #ccc url(stars.jpg) no-repeat bottom center;
-  background-size:cover;
+  /*background: #ccc url() no-repeat bottom center;
+  background-size:cover;*/
   color:#BCC6CC;
   min-height: 100%;
   min-width: 1024px;
@@ -227,7 +243,7 @@ section#highlights{
   top:0;
   left:0;
   padding-top:2em;
-  padding-bottom:4em;
+  padding-bottom:.5em;
 }
 
 .outcomes h1{
@@ -260,8 +276,8 @@ section#highlights{
 /*special EDUCATION rules */
 
 section#education{
-  background: #ccc url(stars.jpg) no-repeat bottom center;
-  background-size:cover;
+  /*background: #ccc url() no-repeat bottom center;
+  background-size:cover;*/
   color:#BCC6CC;
   min-height: 100%;
   min-width: 1024px;
@@ -270,7 +286,7 @@ section#education{
   top:0;
   left:0;
   padding-top:2em;
-  padding-bottom:4em;
+  padding-bottom:.5em;
 }
 
 .degree h1{
@@ -299,8 +315,8 @@ section#education{
 /*special EXPERIENCE rules */
 
 section#experience{
-  background: #ccc url(stars.jpg) no-repeat center center;
-  background-size:cover;
+  /*background: #ccc url() no-repeat center center;
+  background-size:cover;*/
   color:#BCC6CC;
   min-height: 100%;
   min-width: 1024px;
@@ -309,8 +325,7 @@ section#experience{
   top:0;
   left:0;
   padding-top:2em;
-  padding-bottom:4em; 
-  overflow:hidden;
+  padding-bottom:.5em; 
 }
 
 .employment-snapshot h1{
@@ -339,8 +354,8 @@ section#experience{
 
 /*special SKILLS rules */
 section#skills {
-  background: #ccc url(stars.jpg) no-repeat bottom center;
-  background-size:cover;
+  /*background: #ccc url() no-repeat bottom center;
+  background-size:cover;*/
   color:#BCC6CC;
   min-height: 100%;
   min-width: 1024px;
@@ -349,7 +364,7 @@ section#skills {
   top:0;
   left:0;
   padding-top:2em;
-  padding-bottom:4em;
+  padding-bottom:.5em;
 }
 
 section#skills h1{
@@ -374,5 +389,12 @@ section#skills ul li{
   font-size: 100%;
   margin:auto;
   font-style:bold;
-  padding-top:4em;
+  padding-top:2em;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
